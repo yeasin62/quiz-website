@@ -1,11 +1,17 @@
 .sigle-question {
     border: 1px solid #ddd;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
+    position:relative;
 }
 .sigle-question h5 {
     text-align: left;
 }
 .radio_section {
     text-align: left;
+}
+.eye {
+    position:absolute;
+    right:10px;
+    top:20px;
 }

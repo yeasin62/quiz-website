@@ -14,7 +14,7 @@ const Practice = () => {
             <div className='questions'>
                 <h2>Quiz of {name}</h2>
                 {
-                    questions.map(question => <Question key={question.id} question={question}></Question>)
+                    questions.map((question,index )=> <Question key={question.id} question={question} index={index}></Question>)
                 }
             </div>
             <div className="displayResult">
