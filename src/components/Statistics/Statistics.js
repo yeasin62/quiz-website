@@ -1,4 +1,5 @@
 import axios from 'axios';
+import './Statistics.css';
 import React, { PureComponent, useEffect, useState } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -24,15 +25,16 @@ const Statistics = () => {
     
 
     return (
-        <div>
+        <div className='stat-container'>
             <h2>Statistics</h2>
-
-            <BarChart width={400} height={400} data={data}>
+            <ResponsiveContainer height={400}>
+            <BarChart  data={data}>
             <Bar dataKey="total" fill="#8884d8" />
             <XAxis dataKey="name"></XAxis>
             <YAxis dataKey="total"></YAxis>
             <Tooltip></Tooltip>
             </BarChart>
+            </ResponsiveContainer>
         </div>
     );
 };
