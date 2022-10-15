@@ -16,13 +16,14 @@
 .col {
     border: 1px solid purple;
 }
-.btn-primary {
+.card-body a {
     background: #264DE4;
     padding:7px 10px;
     border:none;
     color:#fff;
     font-size:14px;
     font-weight:bold;
+    text-decoration:none;
 }
 .card-title {
     font-weight: bold;

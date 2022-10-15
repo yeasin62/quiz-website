@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Option = ({option,question}) => {
+const Option = ({option,question,handleAnswer}) => {
     return (
         <div>
-            <input type="radio" name={question.id} id={option} /> {option}
+            <input onClick={()=>handleAnswer(option)} type="radio" name={question.id} id={option} value={option}/> {option}
         </div>
     );
 };

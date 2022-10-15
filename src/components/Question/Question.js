@@ -3,6 +3,10 @@ import Option from '../Option/Option';
 import './Question.css';
 
 const Question = ({question}) => {
+    const handleAnswer = () => {
+        return console.log(question);
+        
+    }
     console.log(question);
     return (
         <div className='sigle-question'>
@@ -10,7 +14,7 @@ const Question = ({question}) => {
             <div className='radio_section'>
                 {
                 question.options.map(option => {
-                    return <Option key={option.id} option={option} question={question}></Option>
+                    return <Option key={option.id} option={option} question={question} handleAnswer={handleAnswer}></Option>
                 })
                 }
             </div>

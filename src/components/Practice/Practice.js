@@ -7,7 +7,8 @@ const Practice = () => {
     const practice = useLoaderData();
     const practiceData = practice.data;
     const {name, questions } = practiceData;
-    console.log(practice.data);
+    
+    
     return (
         <div className="question_container">
             <div className='questions'>
