@@ -39,6 +39,10 @@ function App() {
           },
          element: <Practice></Practice>
        },
+        {
+          path: '*',
+         element: <div><h2>404 Error, You are visiting a wrong page</h2></div>
+       },
       ]
       
     }
